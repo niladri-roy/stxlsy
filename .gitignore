@@ -2,7 +2,6 @@
 node_modules/
 
 # Ignore build/dist output
-dist/
 
 # Ignore logs
 *.log
