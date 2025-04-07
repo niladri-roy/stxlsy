@@ -1,7 +1,32 @@
-body {
-  background-color: rgb(237, 34, 19);
-}
+// src/main.scss
 
-h1{
-  color: white;
-}
+@use 'helpers/variables';
+@use 'helpers/mixins';
+@use 'helpers/functions';
+@use 'helpers/responsive';
+
+@use 'base/reset';
+@use 'base/typography';
+@use 'base/defaults';
+
+@use 'utilities/colors';
+@use 'utilities/spacing';
+@use 'utilities/flex';
+@use 'utilities/grid';
+@use 'utilities/display';
+@use 'utilities/sizing';
+@use 'utilities/border';
+@use 'utilities/text';
+@use 'utilities/background';
+@use 'utilities/effects';
+@use 'utilities/position';
+
+@use 'components/button';
+@use 'components/card';
+@use 'components/navbar';
+@use 'components/form';
+@use 'components/modal';
+@use 'components/tooltip';
+
+@use 'themes/dark';
+@use 'themes/light';
