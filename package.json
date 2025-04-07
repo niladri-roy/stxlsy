@@ -1,0 +1,16 @@
+{
+  "name": "stxlsy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass src/main.scss dist/style.css",
+    "watch": "sass --watch src/main.scss dist/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.86.3"
+  }
+}
