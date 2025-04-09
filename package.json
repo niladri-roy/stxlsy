@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "sass src/main.scss dist/style.css",
-    "watch": "sass --watch src/main.scss dist/style.css"
+    "build": "sass src/main.scss dist/stxsly.css",
+    "watch": "sass --watch src/main.scss dist/stxsly.css"
   },
   "keywords": [],
   "author": "",
