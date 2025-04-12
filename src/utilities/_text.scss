@@ -1,0 +1,59 @@
+@use '../tokens/fonts' as tFonts;
+@use '../tokens/spacing' as tSpacing;
+@use '../tokens/typography' as tType;
+
+// Font family → ff-*
+@each $name, $font in tFonts.$font-families {
+  .ff-#{$name} {
+    font-family: #{$font};
+  }
+}
+
+// Font size → fs-*
+@each $size, $value in tType.$font-sizes {
+  .fs-#{$size} {
+    font-size: #{$value};
+  }
+}
+
+// Font weight → fw-*
+@each $weight, $value in tType.$font-weights {
+  .fw-#{$weight} {
+    font-weight: #{$value};
+  }
+}
+
+// Text align → ta-*
+@each $align in (left, center, right, justify) {
+  .ta-#{$align} {
+    text-align: #{$align};
+  }
+}
+
+// Text transform → tt-*
+@each $case in (uppercase, lowercase, capitalize, normal-case) {
+  .tt-#{$case} {
+    text-transform: if($case ==normal-case, none, $case);
+  }
+}
+
+// Text decoration → td-*
+@each $decoration in (underline, line-through, no-underline) {
+  .td-#{$decoration} {
+    text-decoration: if($decoration ==no-underline, none, $decoration);
+  }
+}
+
+// Line height → lh-*
+@each $name, $value in tType.$line-heights {
+  .lh-#{$name} {
+    line-height: #{$value};
+  }
+}
+
+// Letter spacing → ls-*
+@each $name, $value in tType.$letter-spacings {
+  .ls-#{$name} {
+    letter-spacing: #{$value};
+  }
+}

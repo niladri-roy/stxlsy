@@ -1,3 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Fira+Code&family=Nunito&family=Orbitron&family=Comic+Neue&display=swap");
+.ff-sans {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
 
+.ff-serif {
+  font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+
+.ff-mono {
+  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.ff-display {
+  font-family: 'Bebas Neue', cursive;
+}
+
+.ff-handwriting {
+  font-family: 'Pacifico', cursive;
+}
+
+.ff-code {
+  font-family: 'Fira Code', monospace;
+}
+
+.ff-rounded {
+  font-family: 'Nunito', sans-serif;
+}
+
+.ff-tech {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.ff-comic {
+  font-family: 'Comic Neue', cursive;
+}
+
+.fs-xs {
+  font-size: 0.75rem;
+}
+
+.fs-sm {
+  font-size: 0.875rem;
+}
+
+.fs-base {
+  font-size: 1rem;
+}
+
+.fs-lg {
+  font-size: 1.125rem;
+}
+
+.fs-xl {
+  font-size: 1.25rem;
+}
+
+.fs-2xl {
+  font-size: 1.5rem;
+}
+
+.fw-thin {
+  font-weight: 100;
+}
+
+.fw-light {
+  font-weight: 300;
+}
+
+.fw-normal {
+  font-weight: 400;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.fw-semibold {
+  font-weight: 600;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-black {
+  font-weight: 900;
+}
+
+.ta-left {
+  text-align: left;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.ta-right {
+  text-align: right;
+}
+
+.ta-justify {
+  text-align: justify;
+}
+
+.tt-uppercase {
+  text-transform: uppercase;
+}
+
+.tt-lowercase {
+  text-transform: lowercase;
+}
+
+.tt-capitalize {
+  text-transform: capitalize;
+}
+
+.tt-normal-case {
+  text-transform: none;
+}
+
+.td-underline {
+  text-decoration: underline;
+}
+
+.td-line-through {
+  text-decoration: line-through;
+}
+
+.td-no-underline {
+  text-decoration: none;
+}
+
+.lh-none {
+  line-height: 1;
+}
+
+.lh-tight {
+  line-height: 1.25;
+}
+
+.lh-snug {
+  line-height: 1.375;
+}
+
+.lh-normal {
+  line-height: 1.5;
+}
+
+.lh-relaxed {
+  line-height: 1.625;
+}
+
+.lh-loose {
+  line-height: 2;
+}
+
+.ls-tighter {
+  letter-spacing: -0.05em;
+}
+
+.ls-tight {
+  letter-spacing: -0.025em;
+}
+
+.ls-normal {
+  letter-spacing: 0;
+}
+
+.ls-wide {
+  letter-spacing: 0.025em;
+}
+
+.ls-wider {
+  letter-spacing: 0.05em;
+}
+
+.ls-widest {
+  letter-spacing: 0.1em;
+}
 
 /*# sourceMappingURL=stxsly.css.map */
