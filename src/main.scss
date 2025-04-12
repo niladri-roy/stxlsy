@@ -1,15 +1,16 @@
-// src/main.scss
-
+// Helper Functions, Variables, Mixins, etc.
 @use 'helpers/variables';
 @use 'helpers/mixins';
 @use 'helpers/functions';
 @use 'helpers/responsive';
 
+// Base Styles (reset, typography, base styles)
 @use 'base/reset';
 @use 'base/typography';
 @use 'base/defaults';
 
-@use 'utilities/colors';
+// Utilities (functional, atomic classes)
+@use 'utilities/colors'; // will be used for .text-red, .bg-blue, etc.
 @use 'utilities/spacing';
 @use 'utilities/flex';
 @use 'utilities/grid';
@@ -21,6 +22,7 @@
 @use 'utilities/effects';
 @use 'utilities/position';
 
+// Components (custom UI components)
 @use 'components/button';
 @use 'components/card';
 @use 'components/navbar';
@@ -28,5 +30,15 @@
 @use 'components/modal';
 @use 'components/tooltip';
 
+// Themes (optional themes)
 @use 'themes/dark';
 @use 'themes/light';
+
+// Design Tokens (namespaced for clarity & future-proofing)
+@use 'tokens/colors' as tColors;
+@use 'tokens/spacing' as tSpacing;
+@use 'tokens/fonts' as tFonts;
+@use 'tokens/breakpoints' as tBreakpoints;
+@use 'tokens/shadows' as tShadows;
+@use 'tokens/zindex' as tZ;
+@use 'tokens/radius' as tRadius;
