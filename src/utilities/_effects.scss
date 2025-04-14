@@ -1,0 +1,7 @@
+@use '../tokens/shadows' as tShadow;
+
+@each $name, $value in tShadow.$shadows {
+  .sh-#{$name} {
+    box-shadow: $value;
+  }
+}

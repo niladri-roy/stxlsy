@@ -1,0 +1,9 @@
+@each $size in (full, screen, auto, min, max, fit) {
+  .w-#{$size} {
+    width: if($size ==full, 100%, if($size ==screen, 100vw, $size));
+  }
+
+  .h-#{$size} {
+    height: if($size ==full, 100%, if($size ==screen, 100vh, $size));
+  }
+}

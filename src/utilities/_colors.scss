@@ -1,0 +1,7 @@
+@use '../tokens/colors' as tColor;
+
+@each $name, $value in tColor.$colors {
+  .tc-#{$name} {
+    color: #{$value};
+  }
+}

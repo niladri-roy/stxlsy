@@ -1,0 +1,23 @@
+@each $dir in (row, row-reverse, column, column-reverse) {
+  .fd-#{$dir} {
+    flex-direction: $dir;
+  }
+}
+
+@each $wrap in (wrap, nowrap, wrap-reverse) {
+  .fw-#{$wrap} {
+    flex-wrap: $wrap;
+  }
+}
+
+@each $justify in (start, center, end, between, around, evenly) {
+  .jc-#{$justify} {
+    justify-content: if($justify ==start, flex-start, if($justify ==end, flex-end, space-#{$justify}));
+  }
+}
+
+@each $align in (start, center, end, stretch, baseline) {
+  .ai-#{$align} {
+    align-items: if($align ==start, flex-start, if($align ==end, flex-end, $align));
+  }
+}

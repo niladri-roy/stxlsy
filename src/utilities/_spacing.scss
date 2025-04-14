@@ -1,0 +1,11 @@
+@use '../tokens/spacing' as tSpacing;
+
+@each $name, $value in tSpacing.$space {
+  .m-#{$name} {
+    margin: #{$value};
+  }
+
+  .p-#{$name} {
+    padding: #{$value};
+  }
+}

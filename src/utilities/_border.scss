@@ -1,0 +1,17 @@
+@each $radius in (none, sm, md, lg, full) {
+  .br-#{$radius} {
+    border-radius: if($radius ==none, 0, if($radius ==full, 9999px, $radius));
+  }
+}
+
+@each $width in (1px, 2px, 4px, 8px) {
+  .bw-#{$width} {
+    border-width: $width;
+  }
+}
+
+@each $style in (solid, dashed, dotted, double, none) {
+  .bs-#{$style} {
+    border-style: $style;
+  }
+}
