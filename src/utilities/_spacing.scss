@@ -1,6 +1,6 @@
 @use '../tokens/spacing' as tSpacing;
 
-@each $name, $value in tSpacing.$space {
+@each $name, $value in tSpacing.$spacing {
   .m-#{$name} {
     margin: #{$value};
   }
