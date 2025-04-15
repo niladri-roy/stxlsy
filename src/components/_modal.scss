@@ -1,0 +1,29 @@
+@use 'sass:map';
+@use '../tokens/colors' as tColors;
+@use '../tokens/radius' as tRadius;
+@use '../tokens/spacing' as tSpacing;
+@use '../tokens/shadows' as tShadows;
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: map.get(tColors.$colors, 'white');
+  padding: map.get(tSpacing.$spacing, 'lg');
+  border-radius: map.get(tRadius.$radius, 'lg');
+  box-shadow: map.get(tShadows.$shadows, 'xl');
+  z-index: 1000;
+  max-width: 90%;
+  width: 500px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}

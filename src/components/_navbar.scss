@@ -1,0 +1,22 @@
+@use 'sass:map';
+@use '../tokens/colors' as tColors;
+@use '../tokens/spacing' as tSpacing;
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: map.get(tSpacing.$spacing, 'md');
+  background-color: map.get(tColors.$colors, 'blue-600');
+  color: map.get(tColors.$colors, 'white');
+}
+
+.navbar-item {
+  margin-right: map.get(tSpacing.$spacing, 'md');
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,26 @@
+@use 'sass:map';
+@use '../tokens/colors' as tColors;
+@use '../tokens/spacing' as tSpacing;
+@use '../tokens/radius' as tRadius;
+@use '../tokens/typography' as tType;
+
+.input {
+  width: 100%;
+  padding: map.get(tSpacing.$spacing, 'sm');
+  border: 1px solid map.get(tColors.$colors, 'gray-300');
+  border-radius: map.get(tRadius.$radius, 'sm');
+  font-size: map.get(tType.$font-sizes, 'md');
+  font-family: inherit;
+  outline: none;
+
+  &:focus {
+    border-color: map.get(tColors.$colors, 'blue-600');
+    box-shadow: 0 0 0 2px map.get(tColors.$colors, 'blue-100');
+  }
+}
+
+.label {
+  display: block;
+  margin-bottom: map.get(tSpacing.$spacing, 'xs');
+  font-size: map.get(tType.$font-sizes, 'sm');
+}

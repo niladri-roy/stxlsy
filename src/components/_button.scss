@@ -1,0 +1,41 @@
+@use 'sass:map';
+@use 'sass:color';
+@use 'sass:string';
+
+@use '../tokens/colors' as tColors;
+@use '../tokens/typography' as tType;
+@use '../tokens/fonts' as tFonts;
+@use '../tokens/radius' as tRadius;
+
+.btn {
+  font-family: map.get(tFonts.$font-families, 'primary');
+  font-size: map.get(tType.$font-sizes, 'md');
+  font-weight: map.get(tType.$font-weights, 'medium');
+  padding: 0.5rem 1rem;
+  border-radius: map.get(tRadius.$radius, 'md');
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+// Utility-based button classes like .bt-pr-bl, .bt-out-bl, etc.
+
+@each $colorName, $color in tColors.$colors {
+  $short-name: string.slice($colorName, 1);
+
+  .bt-pr-#{$short-name} {
+    background-color: $color;
+    color: if(color.channel($color, "lightness", $space: hsl) > 60, #000, #fff);
+  }
+
+  .bt-out-#{$short-name} {
+    background-color: transparent;
+    border: 1px solid $color;
+    color: $color;
+  }
+
+  .bt-sf-#{$short-name} {
+    background-color: color.scale($color, $lightness: 20%);
+    color: $color;
+  }
+}

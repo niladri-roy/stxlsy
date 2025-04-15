@@ -1,0 +1,32 @@
+@use 'sass:map';
+@use '../tokens/colors' as tColors;
+@use '../tokens/typography' as tType;
+@use '../tokens/spacing' as tSpacing;
+@use '../tokens/radius' as tRadius;
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: map.get(tColors.$colors, 'gray-800');
+    color: map.get(tColors.$colors, 'white');
+    padding: map.get(tSpacing.$spacing, 'xs') map.get(tSpacing.$spacing, 'sm');
+    font-size: map.get(tType.$font-sizes, 'xs');
+    border-radius: map.get(tRadius.$radius, 'sm');
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 10;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+}

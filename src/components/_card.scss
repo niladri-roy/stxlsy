@@ -1,0 +1,12 @@
+@use 'sass:map';
+@use '../tokens/colors' as tColors;
+@use '../tokens/spacing' as tSpacing;
+@use '../tokens/radius' as tRadius;
+@use '../tokens/shadows' as tShadows;
+
+.card {
+  background-color: map.get(tColors.$colors, 'white');
+  padding: map.get(tSpacing.$spacing, 'md');
+  border-radius: map.get(tRadius.$radius, 'lg');
+  box-shadow: map.get(tShadows.$shadows, 'md');
+}
