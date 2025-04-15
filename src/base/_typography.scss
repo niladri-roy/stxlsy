@@ -1,0 +1,61 @@
+@use 'sass:map';
+@use '../tokens/typography' as tType;
+@use '../tokens/fonts' as tFonts;
+@use '../tokens/colors' as tColors;
+
+body {
+  font-family: map.get(tFonts.$font-families, 'primary'), sans-serif;
+  font-size: map.get(tType.$font-sizes, 'md');
+  line-height: map.get(tType.$line-heights, 'base');
+  color: map.get(tColors.$colors, 'gray-900');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: map.get(tFonts.$font-families, 'heading'), sans-serif;
+  font-weight: map.get(tType.$font-weights, 'bold');
+  line-height: map.get(tType.$line-heights, 'heading');
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: map.get(tType.$font-sizes, '4xl');
+}
+
+h2 {
+  font-size: map.get(tType.$font-sizes, '3xl');
+}
+
+h3 {
+  font-size: map.get(tType.$font-sizes, '2xl');
+}
+
+h4 {
+  font-size: map.get(tType.$font-sizes, 'xl');
+}
+
+h5 {
+  font-size: map.get(tType.$font-sizes, 'lg');
+}
+
+h6 {
+  font-size: map.get(tType.$font-sizes, 'md');
+}
+
+p {
+  margin-bottom: 1em;
+  line-height: map.get(tType.$line-heights, 'base');
+}
+
+a {
+  color: map.get(tColors.$colors, 'blue-600');
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,23 @@
+@use 'sass:map';
+@use '../tokens/colors' as tColors;
+@use '../tokens/typography' as tType;
+@use '../tokens/fonts' as tFonts;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%; // 16px
+  line-height: 1.5;
+  font-family: map.get(tFonts.$font-families, 'primary'), sans-serif;
+  color: map.get(tColors.$colors, 'gray-900');
+  background-color: map.get(tColors.$colors, 'white');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
