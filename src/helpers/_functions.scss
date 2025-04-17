@@ -1,0 +1,6 @@
+@use 'sass:map';
+
+// Get nested value from a map safely
+@function get-token($map, $key) {
+  @return map.get($map, $key);
+}

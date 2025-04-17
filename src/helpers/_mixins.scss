@@ -1,0 +1,19 @@
+@use 'sass:map';
+@use '../tokens/spacing' as tSpacing;
+@use '../tokens/radius' as tRadius;
+@use '../tokens/colors' as tColors;
+
+// Mixin for setting padding and margin
+@mixin spacing($property, $size) {
+  #{$property}: map.get(tSpacing.$spacing, $size);
+}
+
+// Mixin for rounded corners
+@mixin rounded($size) {
+  border-radius: map.get(tRadius.$radius, $size);
+}
+
+// Mixin for background color
+@mixin bg-color($color-name) {
+  background-color: map.get(tColors.$colors, $color-name);
+}

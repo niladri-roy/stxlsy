@@ -1,0 +1,13 @@
+@use 'sass:map';
+@use '../tokens/colors' as tColors;
+
+.light-theme {
+  --background: #{map.get(tColors.$colors, 'white')};
+  --foreground: #{map.get(tColors.$colors, 'gray-900')};
+  --primary: #{map.get(tColors.$colors, 'blue-600')};
+  --primary-contrast: #{map.get(tColors.$colors, 'white')};
+  --secondary: #{map.get(tColors.$colors, 'gray-200')};
+  --secondary-contrast: #{map.get(tColors.$colors, 'gray-800')};
+  --border-color: #{map.get(tColors.$colors, 'gray-300')};
+  --muted: #{map.get(tColors.$colors, 'gray-500')};
+}

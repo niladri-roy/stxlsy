@@ -2448,4 +2448,26 @@ body {
   opacity: 1;
 }
 
+.dark-theme {
+  --background: #111827;
+  --foreground: #f3f4f6;
+  --primary: #60a5fa;
+  --primary-contrast: #111827;
+  --secondary: #374151;
+  --secondary-contrast: #f3f4f6;
+  --border-color: #4b5563;
+  --muted: #9ca3af;
+}
+
+.light-theme {
+  --background: #ffffff;
+  --foreground: #111827;
+  --primary: #2563eb;
+  --primary-contrast: #ffffff;
+  --secondary: #e5e7eb;
+  --secondary-contrast: #1f2937;
+  --border-color: #d1d5db;
+  --muted: #6b7280;
+}
+
 /*# sourceMappingURL=stxsly.css.map */
